@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2nd" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZf-1M-4Rq">
+                                <rect key="frame" x="159" y="179" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="KQ2-QC-XSY"/>
+                                    <constraint firstAttribute="height" constant="30" id="Xmo-6Q-fjn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9Q-k3-jsK">
+                                <rect key="frame" x="159" y="263" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1j3-Ki-En7"/>
+                                    <constraint firstAttribute="width" constant="97" id="neB-Qt-nae"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1st" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EOI-QW-yRU">
+                                <rect key="frame" x="159" y="64" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PUv-vR-eZr"/>
+                                    <constraint firstAttribute="width" constant="97" id="Zv6-UI-grW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dF-nZ-0pb">
+                                <rect key="frame" x="159" y="129" width="97" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="FKW-IJ-oWR"/>
+                                    <constraint firstAttribute="height" constant="24" id="jQr-oV-1kI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="3dF-nZ-0pb" secondAttribute="trailing" constant="138" id="3HY-Sg-XJY"/>
+                            <constraint firstItem="C9Q-k3-jsK" firstAttribute="top" secondItem="aZf-1M-4Rq" secondAttribute="bottom" constant="54" id="4uc-fk-dSv"/>
+                            <constraint firstItem="C9Q-k3-jsK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="BAG-jK-c7C"/>
+                            <constraint firstItem="EOI-QW-yRU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="LcY-QV-7HV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C9Q-k3-jsK" secondAttribute="trailing" constant="138" id="NtB-WK-amq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aZf-1M-4Rq" secondAttribute="trailing" constant="138" id="QYo-ja-Y4G"/>
+                            <constraint firstItem="3dF-nZ-0pb" firstAttribute="top" secondItem="EOI-QW-yRU" secondAttribute="bottom" constant="35" id="Xr8-yY-jen"/>
+                            <constraint firstItem="3dF-nZ-0pb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="bSA-SN-QxE"/>
+                            <constraint firstItem="EOI-QW-yRU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="bg5-ds-HYA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EOI-QW-yRU" secondAttribute="trailing" constant="138" id="eAO-C6-O0K"/>
+                            <constraint firstItem="aZf-1M-4Rq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="je3-Oz-JLT"/>
+                            <constraint firstItem="aZf-1M-4Rq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="159" id="wOP-7v-3RH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GRJ-C0-BiK" appends="YES" id="YAa-jz-BGy"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="label" destination="C9Q-k3-jsK" id="ZIq-mh-Asy"/>
+                        <outlet property="textField" destination="aZf-1M-4Rq" id="NhC-CX-7dj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GRJ-C0-BiK">
+                    <connections>
+                        <action selector="dissmissKeyboard" destination="BYZ-38-t0r" id="OKR-m4-e7Z"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="245" y="317"/>
+        </scene>
+    </scenes>
+</document>
